@@ -1,1 +1,0 @@
-encounter(userClass); // Starts encounter function and input the users player object as the parameter
