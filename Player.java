@@ -150,7 +150,9 @@ class Player {
 
       while (!actionSelection.equals("1") && !actionSelection.equals("2") && !actionSelection.equals("3")
           && !actionSelection.equals("4")) { // While they haven't chosen an option, check for user input 
-        actionSelection = scan.nextLine();
+        if (scan.hasNextLine()) {
+          actionSelection = scan.nextLine();
+        }
       }
 
       // If player picks to attack
